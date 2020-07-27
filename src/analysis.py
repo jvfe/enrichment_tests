@@ -46,13 +46,13 @@ mirna_query = mirna_end.select(fields_of_interest2)
 def save_query_table(queryobj, outfile):
     with open(outfile, "w") as f:
         for g in queryobj.results("tsv"):
-            f.write(g)
+            f.write(g + "\n")
 
 
 # %%
 save_query_table(gene_query, "../data/gene_query.tsv")
 save_query_table(mirna_query, "../data/mirna_query.tsv")
 # %%
-pd.read_csv("../data/gene_list.csv")
-
+gene_features = pd.read_table("../data/gene_query.tsv", names=fields_of_interest)
+mirna_features = pd.read_table("../data/mirna_query.tsv", names=fields_of_interest2)
 # %%
