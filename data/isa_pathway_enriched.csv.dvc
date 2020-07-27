@@ -1,0 +1,3 @@
+outs:
+- md5: 7e06f5f7fb6b7000a23e61ebf7bfca83
+  path: isa_pathway_enriched.csv

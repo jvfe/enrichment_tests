@@ -1,3 +1,5 @@
 /gene_query.tsv
 /mirna_query.tsv
 /total_results_isa.csv
+/isa_mirna_enriched.csv
+/isa_pathway_enriched.csv
